@@ -14,7 +14,7 @@ func GetUsers(context *gin.Context) {
 	defer db.Close()
 	fmt.Println("Masuk Sini 1")
 
-	queryy := "SELECT * FROM users"
+	query             := "SELECT * FROM users"
 	name := context.Request.URL.Query()["name"]
 	age := context.Request.URL.Query()["age"]
 	if name != nil {
