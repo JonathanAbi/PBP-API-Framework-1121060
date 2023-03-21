@@ -13,7 +13,7 @@ func GetUsers(context *gin.Context) {
 	db := connect()
 	defer db.Close()
 	fmt.Println("Masuk Sini 1")
-
+	tes := "tes1"
 	query			 := "SELECT * FROM users"
 	name := context.Request.URL.Query()["name"]
 	age := context.Request.URL.Query()["age"]
